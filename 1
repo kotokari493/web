@@ -1,0 +1,27 @@
+#题目
+#访问页面：`https://practice.expandtesting.com/inputs`
+#1. 打开该网页；
+#2. 在**数字输入框**填入数字 `6688`；
+#3. 点击`Submit`提交按钮；
+#4. 使用显式等待，等待结果区域出现输出内容；
+#5. 断言页面输出结果包含字符串 `6688`；
+#6. 测试完成关闭浏览器，程序要捕获异常，就算出错也保证浏览器正常关闭。
+
+#模板
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+driver = webdriver.Chrome()
+wait = WebDriverWait(driver, 10)
+try:
+    # =========在这里写你的代码=========
+
+
+
+finally:
+    driver.quit()
+    print("脚本结束，浏览器已关闭")
+
+#尝试
